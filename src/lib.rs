@@ -144,15 +144,15 @@ use std::convert::TryInto;
 
 #[macro_use]
 mod macros;
-mod codec;
+pub mod codec;
 
 #[cfg(feature = "futures-io")]
 pub mod futures;
 #[cfg(feature = "tokio")]
 pub mod tokio;
 
-mod unshared;
-mod util;
+pub mod unshared;
+pub mod util;
 
 #[cfg(feature = "brotli")]
 pub mod brotli;
