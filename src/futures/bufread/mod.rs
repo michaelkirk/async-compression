@@ -5,6 +5,6 @@
 mod macros;
 mod generic;
 
-pub(crate) use generic::{Decoder, Encoder};
+pub use generic::{Decoder, Encoder};
 
 algos!(futures::bufread<R>);
